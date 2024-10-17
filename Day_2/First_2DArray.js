@@ -1,15 +1,12 @@
-let N = 3;
-let M = 2;
-let arr = [[1,2],[3,4],[5,6]];
-function twodArray(array,rows,colms){
-    for(let i=0;i<rows;i++){
+function twodArray(arr,N,M){
+    for(let i=0;i<N;i++){
     let line = '';
-        for(let j=0;j<colms;j++){
-            line += array[i][j] + ' ';
+        for(let j=0;j<M;j++){
+            line += arr[i][j] + ' ';
 
         }
         console.log(line.trim());
     }
 }
 
-twodArray(arr,N,M);
+twodArray([[1,2],[3,4],[5,6]],3,2);
